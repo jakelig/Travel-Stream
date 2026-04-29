@@ -18,12 +18,10 @@ if not people:
 traveler = st.selectbox("Who's packing?", options=people)
 
 try:
-    records = get_packing_list(traveler)
+    df = get_packing_list(traveler)
 except Exception as e:
     st.error(f"Could not load packing list: {e}")
     st.stop()
-
-df = pl.DataFrame(records, schema={"item": pl.String, "packed": pl.Boolean})
 
 edited = st.data_editor(
     df,

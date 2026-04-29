@@ -4,6 +4,8 @@ import yaml
 
 from py.airbnb import render_listing
 
+_, col, _ = st.columns([1, 20, 1])
+col.image("pages/images/web_logo.png", use_container_width=True)
 st.title("Washington State 🧛‍♂️", text_alignment="center")
 
 df = pl.read_csv("data/itinerary.csv").with_columns(

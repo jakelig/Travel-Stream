@@ -9,6 +9,5 @@ dependencies = [
     "streamlit>=1.56.0",
     "requests>=2.32.0",
     "pyyaml>=6.0",
-    "sqlalchemy>=2.0",
-    "psycopg2-binary>=2.9",
+    "supabase>=2.0",
 ]
