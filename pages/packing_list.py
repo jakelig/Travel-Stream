@@ -36,7 +36,7 @@ edited = st.data_editor(
 
 if st.button("Save Changes", type="primary"):
     try:
-        sync_packing_list(traveler, edited.to_dicts())
+        sync_packing_list(traveler, pl.DataFrame(edited.to_dicts()))
         st.success("Saved!")
     except Exception as e:
         st.error(f"Save failed: {e}")
