@@ -4,14 +4,6 @@ import yaml
 
 from py.airbnb import render_listing
 
-st.html("""
-    <style>
-    .stMainBlockContainer {
-        max-width: 60vw;
-    }
-    </style>
-""")
-
 _, col, _ = st.columns([1, 20, 1])
 col.image("pages/images/web_logo.png", use_container_width=True)
 st.title("Washington State 🧛‍♂️", text_alignment="center")
